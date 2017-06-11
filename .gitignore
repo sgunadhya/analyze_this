@@ -16,3 +16,4 @@ resources/models
 *.txt
 *.pdf
 *.bin
+.DS_Store
