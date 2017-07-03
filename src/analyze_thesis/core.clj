@@ -21,12 +21,28 @@
 (def tokenize (nlp/make-tokenizer (io/resource "models/en-token.bin")))
 (def name-find (nlp/make-name-finder (io/resource "models/en-ner-person.bin")))
 (def location-find (nlp/make-name-finder (io/resource "models/en-ner-location.bin")))
+(def time-find (nlp/make-name-finder (io/resource "models/en-ner-time.bin")))
 (def company-find
   (nlp/make-name-finder (io/resource "models/en-ner-organization.bin")))
+
+
+;; The name of the file which is converted into the text file
+(def file-name "/Users/sushants/Downloads/test")
+
+;;Directory where the pdf files are stored
+(def data-directory "/Users/sushants/Downloads/tests")
+(def economist-text (slurp file-name))
+
+(name-find (tokenize economist-text))
+
+(def tokenized-text (tokenize economist-text))
+
+(time-find tokenized-text)
+
 
 (defn -main
   "Run the data analysis pipeline"
   [& args]
-  (convert-to-text "/Users/sushants/Downloads/economists/" "/Users/sushants/Downloads/economists/"))
+  (convert-to-text data-directory data-directory))
 
 
