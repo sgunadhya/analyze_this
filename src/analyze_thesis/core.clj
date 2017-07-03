@@ -1,4 +1,4 @@
-(ns analyze-thesis.core
+(ns analyze-this.core
   (:gen-class)
   (:require [clojure.java.io :as io]
             [pantomime.extract :as extract]

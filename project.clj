@@ -1,4 +1,4 @@
-(defproject analyze_thesis "0.1.0-SNAPSHOT"
+(defproject analyze_this "0.1.0-SNAPSHOT"
   :description
   "A project to analyze any file for interesting entities like Person, Organization or Location"
   :url "https://github.com/mitra-varuna/analyze_thesis"
@@ -8,6 +8,6 @@
                  [com.novemberain/pantomime "2.9.0"]
                  [io.framed/overseer "0.8.6"]
                  [clojure-opennlp "0.4.0"]]
-  :main ^:skip-aot analyze-thesis.core
+  :main ^:skip-aot analyze-this.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

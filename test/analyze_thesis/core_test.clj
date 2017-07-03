@@ -1,6 +1,6 @@
-(ns analyze-thesis.core-test
+(ns analyze-this.core-test
   (:require [clojure.test :refer :all]
-            [analyze-thesis.core :refer :all]))
+            [analyze-this.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
