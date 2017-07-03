@@ -1,4 +1,4 @@
-# analyze_thesis
+# Analyze This
 
 A hobby project to analyze any file for interesting entities like Person, Organization or Location
 
